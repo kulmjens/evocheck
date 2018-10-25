@@ -22,7 +22,7 @@ $_module_params = array(
 	'base_path'         => MODX_SITE_URL.'assets/modules/'.basename( dirname(__FILE__) ).'/',
 	'url'               => !EC_STANDALONE
 							? 'index.php?a='. $modx->manager->action .'&amp;id=' . $module_id
-							: MODX_MANAGER_URL.$standaloneFile.'?',
+							: MODX_BASE_URL.$standaloneFile.'?',
 );
 
 $ec = new EvoCheck($_module_params);
